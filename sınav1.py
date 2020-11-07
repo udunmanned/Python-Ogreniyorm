@@ -1,4 +1,4 @@
-
+ 
 ##1.soru
 my_string = "James Hetfield"
 my_letter = my_string[4]

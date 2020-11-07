@@ -1,5 +1,6 @@
 my_list=[1,2,3]
 print(my_list)
+print(my_list[2:])
 
 my_list[0]=4
 print(my_list)
