@@ -1,15 +1,15 @@
-from random import *
+from random import*
 
-user_pass=input("Enter your password:")
+alphabet=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+pass_guess=""
+password_in=input("Şifrenizi Girin:")
 
-password=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+while pass_guess!=password_in :
+  pass_guess=""
+  for _ in range(len(password_in)):
+    guess_letter=alphabet[randint(0,25)]
+    pass_guess=str(pass_guess) + str(guess_letter)
+  print(pass_guess)
+  
 
-guess=""
 
-while user_pass != guess :
-  guess=""
-  for letter in range(len(user_pass)):
-    guess_letter=password[randint(0,25)]
-    print(guess_letter)##for logical 
-    guess=str(guess_letter)+ str(guess)
-  print(guess)
